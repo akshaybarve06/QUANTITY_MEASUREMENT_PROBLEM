@@ -22,14 +22,18 @@ class QuantityMeasurementMain
             return value*Units.YARD
         if (unit == 'cm')
             return value*Units.CM
+
         if (unit == 'gallon')
             return value*Units.GALLON
         if (unit == 'ml')
             return value*Units.ML
+
         if (unit == 'gm')
             return value*Units.GM
         if (unit == 'ton')
             return value*Units.TON
+        if (unit == 'farenheit')
+            return ((value - 32) * 5/9)
         else
             return value
     };

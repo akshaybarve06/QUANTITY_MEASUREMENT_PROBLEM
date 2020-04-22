@@ -197,5 +197,11 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
         let ans = lengthCheck.addition(lengthCheck.compare("Ton",1), lengthCheck.compare("Gm",1000))
         assert.equal(ans, 1001)
     })
+
+    // TC 8.1 Check Equality of 212 f and 100 c
+    it('given value of temperature 212 farenheit and 100 celcius if equal should return true',function ()
+    {
+        assert.equal( lengthCheck.compare("Farenheit",212), lengthCheck.compare("celcius",100))
+    })
 })
 
