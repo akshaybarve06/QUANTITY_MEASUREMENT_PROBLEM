@@ -32,11 +32,13 @@ describe('Testing for Length Check', function ()
         assert.equal(true, expectedOutput)
     })
     // TC 1.5 Check Equality For Type
-    it('given value of unit in Ft should return type as number ', function () {
+    it('given value of unit in Ft should return type as number ', function ()
+    {
         assert.typeOf(lengthCheck.feetToInch(0), 'Number')
     })
     // TC 1.6 Check Value For Equality
-    it('given value of unit in Ft should return equal ', function () {
+    it('given value of unit in Ft should return equal ', function ()
+    {
         assert.equal(24, lengthCheck.feetToInch(2) )
     })
     // TC 1.7 Check Equality For Length of 0 in and 0 in
@@ -66,19 +68,29 @@ describe('Testing for Length Check', function ()
         assert.equal(true, expectedOutput)
     })
     // TC 1.11 Check Equality For Type
-    it('given value of unit in inch should return type as number ', function () {
+    it('given value of unit in inch should return type as number ', function ()
+    {
         assert.typeOf(lengthCheck.inchToFeet(12), 'Number')
     })
     // TC 1.12 Check Value For Equality For Inch
-    it('given value of unit in inch should return equal ', function () {
+    it('given value of unit in inch should return equal ', function ()
+    {
         assert.equal(2, lengthCheck.inchToFeet(24) )
     })
     // TC 1.13 Check Value For 3 Feet and 1 Yard are Equal
-    it( 'given value of unit 3 feet and 1 yard should return equal', function () {
+    it( 'given value of unit 3 feet and 1 yard should return equal', function ()
+    {
         assert.equal(lengthCheck.feetToInch(3),lengthCheck.yardToInch(1))
     })
     // TC 1.14 Check Value For 1 Feet and 1 Yard are Not Equal
-    it( 'given value of unit 1 feet and 1 yard should return not equal', function () {
+    it( 'given value of unit 1 feet and 1 yard should return not equal', function ()
+    {
         assert.notEqual(lengthCheck.feetToInch(1),lengthCheck.yardToInch(1))
     })
+    // TC 1.15 Check Value For 1 inch and 1 Yard are Not Equal
+    it( 'given value of unit 1 inch and 1 yard should return not equal', function ()
+    {
+        assert.notEqual(lengthCheck.inchReturnSame(1),lengthCheck.yardToInch(1))
+    })
+
 })

@@ -17,10 +17,13 @@ class QuantityMeasurementMain
         return feet*12;
     }
     inchToFeet(inch) {
-        return inch/12;
+        return inch;
     }
     yardToInch(yard){
         return yard*36;
+    }
+    inchReturnSame(inch){
+        return inch;
     }
 }
 module.exports = new QuantityMeasurementMain;
