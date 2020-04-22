@@ -39,4 +39,10 @@ describe('Testing for Length Check', function ()
     it('given value of unit in Ft should return equal ', function () {
         assert.equal(24, lengthCheck.feetToInch(2) )
     })
+    // TC 1.7 Check Equality For Length of 0 in and 0 in
+    it('given value of units 0 inch and 0 inch Length  if equal  should return true', function ()
+    {
+        let expectedOutput = lengthCheck.checkLengthOfUnits(0, 0);
+        assert.equal(true, expectedOutput)
+    })
 })
