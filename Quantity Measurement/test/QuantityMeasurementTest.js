@@ -107,5 +107,9 @@ describe('Testing for Length Check', function ()
     {
         assert.equal( lengthCheck.yardToInch(1), lengthCheck.feetToInch(3))
     })
-
+    // TC Compare Lengths of 2 inch and 5 Cms
+    it('given value of unit 2 in and 5 cms should return equal',function ()
+    {
+        assert.equal(lengthCheck.inchToCMs(2),lengthCheck.cmsReturnSame(5))
+    })
 })

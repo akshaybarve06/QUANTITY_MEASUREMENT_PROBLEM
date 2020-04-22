@@ -25,5 +25,12 @@ class QuantityMeasurementMain
     inchReturnSame(inch){
         return inch;
     }
+    inchToCMs(inch) {
+    return inch*2.5;
+}
+    cmsReturnSame(cms) {
+        return cms;
+    }
+
 }
 module.exports = new QuantityMeasurementMain;
