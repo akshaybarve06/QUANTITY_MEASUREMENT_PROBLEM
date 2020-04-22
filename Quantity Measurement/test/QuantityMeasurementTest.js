@@ -171,5 +171,12 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
         let ans = lengthCheck.addition(lengthCheck.compare("gallon",1), lengthCheck.compare("Lt",3.78))
         assert.equal(ans, 7.56)
     })
+
+    // TC 6.2 Addition of Volume 1 ltr and 1000 ml
+    it('given value of volume 1 Liter and 1000 ml should return 2 ltrs',function ()
+    {
+        let ans = lengthCheck.addition(lengthCheck.compare("Lt",1), lengthCheck.compare("Ml",1000))
+        assert.equal(ans, 2)
+    })
 })
 
