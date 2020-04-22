@@ -65,5 +65,8 @@ describe('Testing for Length Check', function ()
         let expectedOutput = lengthCheck.checkLengthOfUnits(value1, value2);
         assert.equal(true, expectedOutput)
     })
-
+    // TC 1.11 Check Equality For Type
+    it('given value of unit in inch should return type as number ', function () {
+        assert.typeOf(lengthCheck.inchToFeet(12), 'Number')
+    })
 })

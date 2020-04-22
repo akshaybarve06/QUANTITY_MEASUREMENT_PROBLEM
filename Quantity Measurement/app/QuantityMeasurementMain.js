@@ -16,5 +16,8 @@ class QuantityMeasurementMain
     feetToInch(feet) {
         return feet*12;
     }
+    inchToFeet(inch) {
+        return inch/12;
+    }
 }
 module.exports = new QuantityMeasurementMain;
