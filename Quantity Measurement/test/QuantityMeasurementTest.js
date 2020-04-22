@@ -35,4 +35,8 @@ describe('Testing for Length Check', function ()
     it('given value of unit in Ft should return type as number ', function () {
         assert.typeOf(lengthCheck.feetToInch(0), 'Number')
     })
+    // TC 1.6 Check Value For Equality
+    it('given value of unit in Ft should return equal ', function () {
+        assert.equal(24, lengthCheck.feetToInch(2) )
+    })
 })
