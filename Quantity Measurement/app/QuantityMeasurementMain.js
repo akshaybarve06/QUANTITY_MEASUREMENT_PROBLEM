@@ -22,6 +22,10 @@ class QuantityMeasurementMain
             return value*Units.YARD
         if (unit == 'cm')
             return value*Units.CM
+        if (unit == 'gallon')
+            return value*Units.GALLON
+        if (unit == 'ml')
+            return value*Units.ML
         else
             return value
     };

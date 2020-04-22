@@ -152,5 +152,11 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
         let ans = lengthCheck.addition(lengthCheck.compare("Inch",2), lengthCheck.compare("Cm",2.5))
         assert.equal(ans, 3)
     })
+
+    // TC 5.1 Check Equality of Volume 1 Gallon and 3,78 Ltrs
+    it('given value of volume 1 gallon and 3.78 ltrs should return true',function ()
+    {
+        assert.equal(lengthCheck.compare("Gallon",1),lengthCheck.compare("Lt",3.78))
+    })
 })
 
