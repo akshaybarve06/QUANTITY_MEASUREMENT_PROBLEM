@@ -190,5 +190,12 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
     {
         assert.equal(lengthCheck.compare("Ton",1), lengthCheck.compare("Kg",1000))
     })
+
+    // TC 7.3 Addition of Weights 1 Tonne and 1000 gm
+    it('given value of weights 1 tonne and 1000 Gms should return 1001 kgs',function ()
+    {
+        let ans = lengthCheck.addition(lengthCheck.compare("Ton",1), lengthCheck.compare("Gm",1000))
+        assert.equal(ans, 1001)
+    })
 })
 
