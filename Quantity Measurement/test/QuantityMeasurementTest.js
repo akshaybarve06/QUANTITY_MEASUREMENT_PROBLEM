@@ -92,15 +92,20 @@ describe('Testing for Length Check', function ()
     {
         assert.notEqual(lengthCheck.inchReturnSame(1),lengthCheck.yardToInch(1))
     })
-    // TC 1.16 Check Value For 1 Yard and 36 Inches are Not Equal
+    // TC 1.16 Check Value For 1 Yard and 36 Inches are Equal
     it( 'given value of unit 1 yard and 36 inches should return equal', function ()
     {
         assert.equal(lengthCheck.yardToInch(1), lengthCheck.inchReturnSame(36))
     })
-    // TC 1.17 Check Value For 36 and 1 Yard Inches are Not Equal
+    // TC 1.17 Check Value For 36 Inches and 1 Yard are Equal
     it( 'given value of unit 36 inches and 1 yard should return equal', function ()
     {
         assert.equal(lengthCheck.inchReturnSame(36), lengthCheck.yardToInch(1))
+    })
+    // TC 1.18 Check Value For  1 Yard and 3 Feet are Equal
+    it( 'given value of unit  1 yard and 3 Feet should return equal', function ()
+    {
+        assert.equal( lengthCheck.yardToInch(1), lengthCheck.feetToInch(3))
     })
 
 })
