@@ -6,25 +6,24 @@ log("Quantity Measurement Using Node JS");
 
 class QuantityMeasurementMain
 {
-    checkLengthOfUnits(unit1,unit2) {
-        if (unit1 == unit2) {
-            return true
-        } else{
-            return false
-        }
-    }
-    feetToInch(feet) {
-        return feet*Units.FEET;
-    }
-    returnSame(input){
-        return input;
-    }
-    yardToInch(yard){
-        return yard*Units.YARD;
-    }
-    cmsToInch(cms) {
-        return cms*Units.CM;
-    }
 
+    checkLengthOfUnits(unit1, unit2, value1, value2)
+    {
+        if (unit1 == unit2 && value1 == value2)
+            return true
+        else
+            return false
+    }
+    compare(input, value){
+        let unit=input.toLowerCase()
+        if (unit == 'feet')
+            return value*Units.FEET
+        if (unit == 'yard')
+            return value*Units.YARD
+        if (unit == 'cm')
+            return value*Units.CM
+        else
+            return value
+    };
 }
 module.exports = new QuantityMeasurementMain;
