@@ -57,7 +57,7 @@ describe('Testing for Length Check', function ()
         let expectedOutput = lengthCheck.checkLengthOfUnits(0, null);
         assert.equal(false, expectedOutput)
     })
-    // TC 1.4 Check Equality For Reference
+    // TC 1.10 Check Equality For Reference
     it('given value of inch units reference if equal  should return true', function ()
     {
         let value1=12
@@ -65,4 +65,5 @@ describe('Testing for Length Check', function ()
         let expectedOutput = lengthCheck.checkLengthOfUnits(value1, value2);
         assert.equal(true, expectedOutput)
     })
+
 })
