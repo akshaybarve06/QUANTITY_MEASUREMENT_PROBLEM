@@ -1,6 +1,6 @@
 // Test Class For Quantity Measurement
 
-let assert = require('assert');
+let assert = require('chai').assert;
 let lengthCheck = require('../app/QuantityMeasurementMain');
 
 describe('Testing for Length Check', function ()
@@ -30,5 +30,9 @@ describe('Testing for Length Check', function ()
         let value2=10
         let expectedOutput = lengthCheck.checkLengthOfUnits(value1, value2);
         assert.equal(true, expectedOutput)
+    })
+    // TC 1.5 Check Equality For Type
+    it('given value of unit in Ft should return type as number ', function () {
+        assert.typeOf(lengthCheck.feetToInch(0), 'Number')
     })
 })
