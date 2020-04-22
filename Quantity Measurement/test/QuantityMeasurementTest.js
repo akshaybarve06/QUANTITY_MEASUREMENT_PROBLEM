@@ -45,4 +45,10 @@ describe('Testing for Length Check', function ()
         let expectedOutput = lengthCheck.checkLengthOfUnits(0, 0);
         assert.equal(true, expectedOutput)
     })
+    // TC 1.8 Check Not Equality For Length of 0 inch and 1 inch
+    it('given value of units 0 inch and 1 inch Length  if not equal  should return false', function ()
+    {
+        let expectedOutput = lengthCheck.checkLengthOfUnits(0, 1);
+        assert.equal(false, expectedOutput)
+    })
 })
