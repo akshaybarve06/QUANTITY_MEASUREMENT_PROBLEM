@@ -6,5 +6,8 @@ const UNITS={
     ML:0.001,
     LT:1,
     GALLON:3.78,
+    KG:1,
+    GM:0.001,
+    TON:1000
 };
 module.exports=UNITS

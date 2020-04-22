@@ -26,6 +26,10 @@ class QuantityMeasurementMain
             return value*Units.GALLON
         if (unit == 'ml')
             return value*Units.ML
+        if (unit == 'gm')
+            return value*Units.GM
+        if (unit == 'ton')
+            return value*Units.TON
         else
             return value
     };
