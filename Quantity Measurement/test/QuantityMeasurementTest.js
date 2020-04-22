@@ -158,5 +158,11 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
     {
         assert.equal(lengthCheck.compare("Gallon",1),lengthCheck.compare("Lt",3.78))
     })
+
+    // TC 5.2 Check Equality of Volume 1 Ltr and 1000 Ml
+    it('given value of volume 1 Liter and 1000 ml should return true',function ()
+    {
+        assert.equal(lengthCheck.compare("Lt",1 ),lengthCheck.compare("Ml",1000))
+    })
 })
 
