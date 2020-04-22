@@ -117,10 +117,20 @@ describe('Testing for Length Check', function ()
         assert.equal(lengthCheck.compare("Yard",1),lengthCheck.compare("Feet",3))
     })
 
-    // TC Compare Lengths of 2 inch and 5 Cms
+    // TC 3.1 Compare Lengths of 2 inch and 5 Cms
     it('given value of unit 2 in and 5 cms should return equal',function ()
     {
         assert.equal(lengthCheck.compare("Inch",2),lengthCheck.compare("Cm",5))
     })
+})
+describe(' Test Cases For Addition of Lengths Given ',function ()
+{
+    // TC 4.1 Addition of 2 inch and 2 inch
+    it('given value of unit 2 in and 2 inch should return addition 4 inch',function ()
+    {
+        let ans = lengthCheck.addition(lengthCheck.compare("Inch",2), lengthCheck.compare("Inch",2))
+        assert.equal(ans, 4)
+    })
+
 })
 

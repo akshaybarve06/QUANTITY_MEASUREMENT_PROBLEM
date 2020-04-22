@@ -25,5 +25,8 @@ class QuantityMeasurementMain
         else
             return value
     };
+    addition(value1, value2){
+        return value1+value2;
+    }
 }
 module.exports = new QuantityMeasurementMain;
