@@ -180,7 +180,7 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
     })
 
     // TC 7.1 Check equality of 1 Kg and 1000 Grams
-    it('given value of weight 1 Kg and 1000 grams should return true',function ()
+    it('given value of weight 1 Kg and 1000 grams if equal should return true',function ()
     {
         assert.equal(lengthCheck.compare("Kg",1), lengthCheck.compare("Gm",1000))
     })
