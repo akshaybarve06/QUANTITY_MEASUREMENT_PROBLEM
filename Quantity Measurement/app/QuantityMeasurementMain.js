@@ -1,12 +1,12 @@
 // Quantity Measurement Using Node-JS
 
 let log=console.log;
-
+let Units= require('../app/Units');
 log("Quantity Measurement Using Node JS");
 
 class QuantityMeasurementMain
 {
-    checkLengthOfUnits(unit1, unit2) {
+    checkLengthOfUnits(unit1,unit2) {
         if (unit1 == unit2) {
             return true
         } else{
@@ -14,22 +14,16 @@ class QuantityMeasurementMain
         }
     }
     feetToInch(feet) {
-        return feet*12;
+        return feet*Units.FEET;
     }
-    inchToFeet(inch) {
-        return inch;
+    returnSame(input){
+        return input;
     }
     yardToInch(yard){
-        return yard*36;
+        return yard*Units.YARD;
     }
-    inchReturnSame(inch){
-        return inch;
-    }
-    inchToCMs(inch) {
-    return inch*2.5;
-}
-    cmsReturnSame(cms) {
-        return cms;
+    cmsToInch(cms) {
+        return cms*Units.CM;
     }
 
 }
