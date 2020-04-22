@@ -131,17 +131,26 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
         let ans = lengthCheck.addition(lengthCheck.compare("Inch",2), lengthCheck.compare("Inch",2))
         assert.equal(ans, 4)
     })
+
     // TC 4.2 Addition of 1 Feet and 2 inch
     it('given value of unit 1 Feet and 2 inch should return addition 14 inch',function ()
     {
         let ans = lengthCheck.addition(lengthCheck.compare("Feet",1), lengthCheck.compare("Inch",2))
         assert.equal(ans, 14)
     })
+
     // TC 4.3 Addition of 1 Feet and 1 Feet
     it('given value of unit 1 Feet and 1 Feet should return addition 24 inch',function ()
     {
         let ans = lengthCheck.addition(lengthCheck.compare("Feet",1), lengthCheck.compare("Feet",1))
         assert.equal(ans, 24)
+    })
+
+    // TC 4.4 Addition of 2 inch and 2.5 Cms
+    it('given value of unit 2 inch and 2.5 Cms should return addition 3 inch',function ()
+    {
+        let ans = lengthCheck.addition(lengthCheck.compare("Inch",2), lengthCheck.compare("Cm",2.5))
+        assert.equal(ans, 3)
     })
 })
 
