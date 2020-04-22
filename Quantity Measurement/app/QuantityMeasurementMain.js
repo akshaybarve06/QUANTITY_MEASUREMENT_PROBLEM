@@ -12,6 +12,9 @@ class QuantityMeasurementMain
         {
             return true
         }
+        else{
+            return false
+        }
     }
 }
 module.exports = new QuantityMeasurementMain;
