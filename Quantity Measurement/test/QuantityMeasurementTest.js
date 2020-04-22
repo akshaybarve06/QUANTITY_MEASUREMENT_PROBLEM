@@ -185,5 +185,10 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
         assert.equal(lengthCheck.compare("Kg",1), lengthCheck.compare("Gm",1000))
     })
 
+    // TC 7.2 Check equality of 1 Tonne and 1000 Kgs
+    it('given value of weight 1 tonne and 1000 Kgs if equal should return true',function ()
+    {
+        assert.equal(lengthCheck.compare("Ton",1), lengthCheck.compare("Kg",1000))
+    })
 })
 
