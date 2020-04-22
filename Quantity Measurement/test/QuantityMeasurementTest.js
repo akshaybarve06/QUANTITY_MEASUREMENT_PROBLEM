@@ -131,6 +131,11 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
         let ans = lengthCheck.addition(lengthCheck.compare("Inch",2), lengthCheck.compare("Inch",2))
         assert.equal(ans, 4)
     })
-
+    // TC 4.2 Addition of 1 Feet and 2 inch
+    it('given value of unit 1 Feet and 2 inch should return addition 14 inch',function ()
+    {
+        let ans = lengthCheck.addition(lengthCheck.compare("Feet",1), lengthCheck.compare("Inch",2))
+        assert.equal(ans, 14)
+    })
 })
 
