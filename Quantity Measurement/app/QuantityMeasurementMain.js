@@ -19,5 +19,8 @@ class QuantityMeasurementMain
     inchToFeet(inch) {
         return inch/12;
     }
+    yardToInch(yard){
+        return yard*36;
+    }
 }
 module.exports = new QuantityMeasurementMain;

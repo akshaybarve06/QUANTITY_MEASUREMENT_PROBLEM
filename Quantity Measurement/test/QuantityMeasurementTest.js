@@ -73,4 +73,8 @@ describe('Testing for Length Check', function ()
     it('given value of unit in inch should return equal ', function () {
         assert.equal(2, lengthCheck.inchToFeet(24) )
     })
+    // TC 1.13 Check Value For 3 Feet and 1 Yard are Equal
+    it( 'given value of unit 3 feet and 1 yard should return equal', function () {
+        assert.equal(lengthCheck.feetToInch(3),lengthCheck.yardToInch(1))
+    })
 })
