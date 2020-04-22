@@ -164,5 +164,12 @@ describe(' Test Cases For Addition of Lengths Given ',function ()
     {
         assert.equal(lengthCheck.compare("Lt",1 ),lengthCheck.compare("Ml",1000))
     })
+
+    // TC 6.1 Addition of Volume 1 gallon and 3.78 Ltrs
+    it('given value of volume 1 gallon and 3.78 Liter should return 7.75 ltrs',function ()
+    {
+        let ans = lengthCheck.addition(lengthCheck.compare("gallon",1), lengthCheck.compare("Lt",3.78))
+        assert.equal(ans, 7.56)
+    })
 })
 
