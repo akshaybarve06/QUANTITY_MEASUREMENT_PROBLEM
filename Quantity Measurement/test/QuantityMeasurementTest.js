@@ -17,5 +17,10 @@ describe('Testing for Length Check', function ()
         let expectedOutput = lengthCheck.checkLengthOfUnits(0, 1);
         assert.equal(false, expectedOutput)
     })
-
+    // TC 1.3 Check Not Equality For Check 0 Ft and NULL
+    it('given value of units 0 Feet and null Length  if not equal  should return false', function ()
+    {
+        let expectedOutput = lengthCheck.checkLengthOfUnits(0, null);
+        assert.equal(false, expectedOutput)
+    })
 })
